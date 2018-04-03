@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>1-formularz-html5</title>
 </head>
 <body>
-    <p>paragraf pierwszy</p>
-    <p>paragraf drugi</p>
-    <p>paragraf trzeci</p>
-    <p>paragraf czwarty</p>
+<form action="https://formspree.io/adanikpl@gmail.com" method="post">
+<label for="firstname">Imię: </label><br/>
+<input type="text" id="firstname" name="firstname" placeholder="imię">
+<br/><br/>
+<label for="lastname">Nazwisko: </label><br/>
+<input type="text" id="lastname" name="lastname" placeholder="nazwisko">
+<br/><br/>
+<label for="email">E-mail:: </label><br/>
+<input type="email" id="email" placeholder="email" name="_replyto">
+<br/><br/>
+<label for="tel">Telefon: </label><br/>
+<input type="tel" id="tel" name="tel" placeholder="numer telefonu">
+<br/><br/>
+<label for="city">Wybierz miasto: </label><br/>
+<select id="city" name="city">
+<option value="Gdansk">Gdańsk</option>
+<option value="Krakow">Kraków</option>
+<option value="Warszawa">Warszawa</option>
+</select>
+<br/><br/>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Mężczyzna</label>
+<br/>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Kobieta</label>
+<br/><br/>
+<input type="checkbox" id="check" name="check">
+<label for="check"> Wyrażam zgodę na przetwarzanie moich danych osobowych </label>
+<br/><br/>
+<label for="massage">Wpisz treść wiadomości:</label><br/>
+<textarea id="massage" name="massage" rows="10" cols="30">
+</textarea>
+<br/><br/>
+<input type="submit" value="Wyślij">
+</form>
 </body>
 </html>
